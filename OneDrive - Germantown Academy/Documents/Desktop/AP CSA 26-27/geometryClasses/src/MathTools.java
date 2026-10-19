@@ -11,11 +11,13 @@ public class MathTools {
        
        }
        public static double round(double num, int places){
-        return ((int) (num * Math.pow(10, places) + 0.5)) / Math.pow(10,places);
+            return ((int) (num * Math.pow(10, places) + 0.5)) / Math.pow(10,places);
        }
        public static double distance(Point a, Point b){
-       return MathTools.round(Math.pow(Math.pow((double) a.getX() + (double) b.getX(), 2) + Math.pow((double) a.getY() + (double) b.getY(), 2), 0.5), 5);
+            return MathTools.round(Math.pow(Math.pow((double) a.getX() + (double) b.getX(), 2) + Math.pow((double) a.getY() + (double) b.getY(), 2), 0.5), 5);
        }
-        
+        public static double slope(Point a, Point b){
+            return round((((double) a.getY()) - ((double) b.getY())) / (((double) a.getX()) - ((double) b.getX())), 2);
+        }
 }
 

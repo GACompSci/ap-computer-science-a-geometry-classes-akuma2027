@@ -8,5 +8,6 @@ public class App {
         Point b = new Point(4, 1);
 
         System.out.println(MathTools.distance(a, b));
+        System.out.println(MathTools.slope(a, b));
     }
 }
