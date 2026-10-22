@@ -7,8 +7,11 @@ public class App {
         Point a = new Point(6, 7);
         Point b = new Point(4, 1);
         Circle z = new Circle(5, a);
+        Rectangle x = new Rectangle(6, 7, a);
         System.out.println(MathTools.distance(a, b));
         System.out.println(MathTools.slope(a, b));
         System.out.println(z.getArea());
+        System.out.println(x.getArea());
+
     }
 }
