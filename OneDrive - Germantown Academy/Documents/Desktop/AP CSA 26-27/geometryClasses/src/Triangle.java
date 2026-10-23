@@ -6,6 +6,10 @@ public class Triangle {
         verticeA = A;
         verticeB = B;
         verticeC = C;
-        
+
     }
+     public double getArea(){
+        return MathTools.round(0.5* Math.abs(verticeA.getX() * (verticeB.getY() - verticeC.getY()) + verticeB.getX() * (verticeC.getY() - verticeA.getY()) + verticeC.getX() * (verticeA.getY() - verticeB.getY() )), 2) ;
+     }
 }
+   

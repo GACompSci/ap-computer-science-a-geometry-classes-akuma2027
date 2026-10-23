@@ -1,18 +1,18 @@
 public class Point {
-    private int x;
-    private int y;
+    private double x;
+    private double y;
     
-    public Point(int xCoord, int yCoord){
+    public Point(double xCoord, double yCoord){
         x = xCoord;
         y = yCoord;
     }
 
-    public int getX(){
+    public double getX(){
         return x;
     }
 
     
-    public int getY(){
+    public double getY(){
         return y;
     }
 

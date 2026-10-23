@@ -6,12 +6,15 @@ public class App {
 
         Point a = new Point(6, 7);
         Point b = new Point(4, 1);
+        Point c = new Point(8, 2);
         Circle z = new Circle(5, a);
         Rectangle x = new Rectangle(6, 7, a);
+        Triangle d = new Triangle(a, b, c);
         System.out.println(MathTools.distance(a, b));
         System.out.println(MathTools.slope(a, b));
         System.out.println(z.getArea());
         System.out.println(x.getArea());
+        System.out.println(d.getArea());
 
     }
 }
